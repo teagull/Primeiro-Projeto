@@ -1,0 +1,256 @@
+/* 
+GERAL
+*/
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #4d4d4d;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+.botao {
+    color:#f1f1f1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #8f3faf;
+    font-size: .9em;
+    
+}
+
+/*
+NAVEGAÇÃO
+*/
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4d4d4d;
+    /*
+RESOLUÇÃO DE TELA = AUTOPREFIXER
+*/
+}
+nav > a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: ;
+    font-family: cursive, sans-serif;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;  
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+
+/*
+CABEÇALHO
+*/
+
+header {
+    background-image: url("../img/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+header p{
+    margin-bottom: 2em;
+}
+
+/* 
+SOBRE
+*/
+
+#SOBRE {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 20px;
+    background-color: #8f2faf;
+    color: #f1f1f1;
+}
+#SOBRE p {
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+}
+
+#SOBRE .botao2{
+    background-color: #f1f1f1;
+    color: #4d4d4d;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size;
+}
+
+/*
+serviços
+*/
+
+#SERVICOS{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#SERVICOS div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*
+PORTIFOLIO
+*/
+
+#PORTIFOLIO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+}
+#PORTIFOLIO h2{
+    margin-bottom: 20px;
+}
+
+#PORTIFOLIO img{
+    width: 100%;
+}
+
+/*CONTATO*/
+
+#CONTATO{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/*
+FOOTER
+*/
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4d4d4d;
+    color: #f1f1f1;
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (min-width: 768px){
+    /*
+    NAVEGAÇÃO*/
+    nav{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    nav ul {
+        flex-direction: row;
+        width: 
+    }
+    /*
+    CABEÇALHO
+    */
+    header{
+        height: 600px;
+        height: 60vh;
+        justify-content: center;
+    }
+    /*
+    SOBRE
+    */
+    
+    #SOBRE {
+        height: 30vh;
+        justify-content: center;
+        min-height: 250px;
+        
+    }
+    #SERVICOS {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    #SERVICOS h3{
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    #SERVICOS div{
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+    
+    #PORTIFOLIO {
+        flex-direction: 100%;
+        flex-wrap: wrap;
+    }
+    
+    #PORTIFOLIO h2{
+        width: 100%;
+        text-align: center
+    
+    }
+    #PORTIFOLIO img{
+        width: 33.3333333%;
+    }
+    /*CONTATO*/
+    
+    #CONTATO {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    #CONTATO h4,
+    #CONTATO p {
+        width: 100%;
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+
